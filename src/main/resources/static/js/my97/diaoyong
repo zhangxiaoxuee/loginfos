@@ -1,0 +1,8 @@
+
+
+
+<script src="<%=request.getContextPath() %>/js/my97/WdatePicker.js"></script>
+
+<input type="text"  class="Wdate"   onClick="WdatePicker({dateFmt:'yyyy-MM-dd'})" name="birthday">
+
+

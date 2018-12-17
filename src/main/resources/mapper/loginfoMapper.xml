@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jk.mapper.LoginfoMapper">
+
+    <select id="queryLog" resultType="com.jk.model.Loginfo">
+       select * from t_log
+    </select>
+
+    <insert id="addLog">
+        insert into t_order(logtype,logdesc)values(#{logType},#{logDesc})
+    </insert>
+
+    <delete id="delLog">
+        delete from t_order where id in (#{ids})
+    </delete>
+</mapper>
